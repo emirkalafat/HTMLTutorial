@@ -1,0 +1,83 @@
+body {
+    background-color: azure;
+    /*background-image: url('images/resim1.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 500px;*/
+}
+
+p {
+    color: chocolate;
+    font-size: 20px;
+    padding: 12px;
+    margin: 5px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: royalblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 10px;
+    /*border-collapse: collapse;*/
+    width: 100%;
+    background-color: black;
+}
+
+thead {
+    color: green;
+}
+
+tbody {
+    color: blue;
+}
+
+tfoot {
+    color: red;
+}
+
+th,
+td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+    background-color: #747777;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+tr:hover {
+    background-color: brown;
+}
+
+li:hover {
+    background-color: #ffa9a9;
+}

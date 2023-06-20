@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>İkinci Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* This style sets the width of all images to 100%: */
+        img {
+            width: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <picture>
+        <source media="(max-width: 650px)" srcset="images/masa.jpeg">
+        <img src="images/resim1.jpg" alt="Flowers" style="height:200px;">
+    </picture>
+
+
+
+    <h1>HTML Tutorial</h1>
+    <p>My first paragraph.</p>
+
+    <a href="file.html#resim1">
+        Diğer sayfadaki resme dön
+    </a>
+
+    <hr>
+    <h2>Width/Height Attributes or Style?</h2>
+
+    <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and
+        sets the width to 25%.</p>
+
+    <img src="images/html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+    <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the
+        style in the head section:</p>
+
+    <img src="images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <hr>
+
+    <!-- float değeri önemli-->
+    <p><img src="images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.
+    </p>
+
+    <p><img src="images/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.
+    </p>
+
+    <img src="images/masa.jpeg" alt="Bu Bir Masadır" usemap="#deskmap" style="height: 500px; width: 800px;">
+
+    <map name="deskmap">
+        <area shape="rect" coords="360,60,600,80" alt="Komputer" href="anotherFile.html" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+    <p>
+        yazı yazıoğlu
+    </p>
+
+    <table>
+        <caption>Monthly savings</caption>
+        <colgroup>
+            <col span="2" style="background-color:crimson">
+            <col style="background-color:yellow">
+            <col style="background-color:aquamarine">
+        </colgroup>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+            <td>Norway</td>
+        </tr>
+    </table>
+    <table style="background-color: white; width: 50%;">
+        <thead style="text-transform: uppercase;">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th style="width: 50%;">Country</th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+                <td>Norway</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td></td>
+                <td>224</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <table style="width:100%; font-style: italic; background-color: aqua; ">
+        <tr>
+            <th style="border: 1px solid black; border-collapse: collapse;">
+                Name
+            </th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="border: 1px solid black;
+            border-collapse: collapse;">Phone</th>
+            <td style="border: 1px solid black;
+            border-collapse: collapse;">555-1234</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="border: 1px solid black;
+            border-collapse: collapse;">555-8745</td>
+            <td style="border: 1px solid red;
+            border-collapse: collapse;">555-1234</td>
+        </tr>
+        <tr>
+            <th>Falan</td>
+        </tr>
+    </table>
+    <hr>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>* black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>* white cold drink</dd>
+    </dl>
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <button onclick="document.location='yetAnotherFile.html'">YepisYeni Bir Sayfa</button>
+</body>
+
+</html>

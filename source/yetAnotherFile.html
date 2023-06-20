@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .falan {
+            background-color: aqua;
+            color: black;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="myFunction()">Try it</button>
+    </div>
+    <div class="city">
+        <h2>London</h2>
+        <p class="falan">London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].style.backgroundColor == "tomato")
+                    x[i].style.backgroundColor = "aqua";
+                else {
+                    x[i].style.backgroundColor = "tomato";
+                }
+            }
+        }
+    </script>
+    <iframe src="https://youtube.com.tr" height="500" width="90%" title="Iframe Example"
+        style="margin-left: 5%;"></iframe>
+
+    <iframe src="file.html" height="500" width="90%" name="iframe_a" title="Iframe Example"
+        style="margin-left: 5%; margin-top: 25px;"></iframe>
+
+    <a href="https://www.w3schools.com" target="iframe_a">https://www.w3schools.com</a>
+
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+        Click me to display Date and Time</button>
+    <p id="demo"></p>
+
+    
+</body>
+
+</html>
