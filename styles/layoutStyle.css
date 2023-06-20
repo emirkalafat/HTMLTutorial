@@ -1,0 +1,78 @@
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+nav {
+    line-height: 30px;
+    background-color: #eeeeee;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+nav>a {
+    color: rgb(0, 88, 84);
+}
+
+nav>a:hover {
+    color: rgb(0, 224, 254);
+}
+
+article {
+    border-radius: 24px;
+    padding: 12px;
+    margin: 4px;
+    background-color: #f1f1f1;
+    text-overflow: ellipsis;
+    float: left;
+    max-height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+article>h1 {
+    padding: 0px;
+    text-align: start;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+figure {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 90%;
+    height: auto;
+    }
+
+footer {
+    background-color: #000000;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 2em;
+}
+
+a {
+    color: rgb(0, 224, 254);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+}
